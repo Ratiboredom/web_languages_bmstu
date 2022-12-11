@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>page3</title>
+</head>
+<body>
+
+<form action="POST">
+    <table border="1">
+        <tr>
+            <th colspan="2">Регистрация</th>
+        </tr>
+
+        <tr>
+            <td>First name:</td>
+            <td><input type="text" name="firstname" placeholder="John"></td>
+        </tr>
+        <tr>
+            <td>Last name:</td>
+            <td><input type="text" name="lastname" placeholder="Smith"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username" placeholder="john123"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="userpass" placeholder="Enter password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" id="submit-td"><input type="submit" value="Submit"  id="submit-btn"></td>
+        </tr>
+    </table>
+</form>
+    
+</body>
+</html>

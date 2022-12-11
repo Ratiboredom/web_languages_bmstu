@@ -1,0 +1,40 @@
+body{
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+div{
+    min-height: 30px;
+}
+.container {
+    min-width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    min-height: ;
+}
+
+.container23{
+    display: flex;
+    min-height: 300px;
+}
+
+#d1{
+    background-color: red;
+}
+
+#d2{
+    background-color: blue;
+    min-width: 30%;
+}
+
+#d3{
+    background-color: green;
+    min-width: 70%;
+    vertical-align: middle;
+
+}
+
+#d4{
+    background-color: yellow;
+}
+

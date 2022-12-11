@@ -1,0 +1,15 @@
+body {
+    margin: 50px auto;
+    max-width: 80%;
+}
+td {
+    padding: 10px;
+}
+#submit-td {
+    justify-content: center;
+    align-items: center;
+}
+#submit-btn {
+    justify-self: center;
+    margin: 0 auto;
+}

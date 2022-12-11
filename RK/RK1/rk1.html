@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РК1</title>
+</head>
+<body>
+    <h1>РК1 Подлесный Ратибор Игоревич ИУ6-33Б</h1>
+    <h2>Билет №37</h2>
+    <h4>Дан массив чисел arr_y. Найти количество элементов массива кратных одновременно 5 и 3. <br>Поместить полученное число на место последнего элемента массива с индексом, кратным 4.</h4>
+    
+    <h5>Состояние массива arr_y:</h5>
+
+    <table border = "1" id="arr-table">
+        <tr>
+            <th>index</th>
+            <th>value</th>
+        </tr>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <div>
+        <input type="text" id="input-field">
+        <button id="add-button" onclick = "addValue">Добавить элемент</button>
+    </div>
+    <br>
+    <br>
+    <div>
+        <button id="execute-btn">Выполнить</button>
+    </div>
+
+    <script>
+        console.log("test");
+        var arr_y = new Array();
+        var counter = 0;
+        var addButton = document.getElementById('add-button');
+        var arrTable = document.getElementById("arr-table");
+        var inputField = document.getElementById("input-field");
+        var execButton = document.getElementById("execute-btn");
+
+        var tableBody = document.getElementById("table-body");
+
+        function isNumber(n) {
+            return !isNaN(parseFloat(n)) && isFinite(n);
+        }
+
+        function addValue() {
+            var value = inputField.value
+
+            //Validation
+            if (value === "" || !isNumber(value)) {
+                alert("Введите число!");
+                return
+            }
+
+            arr_y.push(Number(value));
+            counter += 1;
+
+            let tr = document.createElement("tr");
+            let td1 = document.createElement("td");
+            td1.innerText = counter - 1;
+            let td2 = document.createElement("td");
+            td2.innerText = Number(value);
+
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tableBody.appendChild(tr);
+
+            console.log(arr_y);
+        }
+
+
+        function execute() {
+            var counter15 = 0;
+            for (let i = 0; i < counter; i++) {
+                if (arr_y[i] % 15 === 0) {
+                    counter15 += 1;
+                }
+            }
+            var ind = Math.floor((counter-1) / 4) * 4;
+            
+            arr_y[ind] = counter15;
+            console.log(arr_y);
+
+            tableBody.getElementsByTagName('td')[ind * 2 + 1].innerText = counter15; 
+        }
+
+        addButton.onclick = addValue;
+        execButton.onclick = execute;
+    </script>
+
+</body>
+</html>
