@@ -1,5 +1,3 @@
-# web_languages_bmstu
+### Языки интернет-программирования
 
-BMSTU discipline "Web programming languages"
-
-Языки интернет-программирования
+BMSTU subject "Web programming languages"
