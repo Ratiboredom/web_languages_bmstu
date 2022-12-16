@@ -1,0 +1,12 @@
+body {
+    margin: 50px auto;
+    max-width: 80%;
+}
+td {
+    padding: 5px 15px;
+    text-align: center;
+}
+table, th, td {
+    border-style: solid;
+    border-width: 1px;
+}
