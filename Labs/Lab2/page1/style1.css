@@ -1,0 +1,25 @@
+body {
+    margin: 0 auto;
+    max-width: 62%;
+    text-align: justify;
+}
+
+em {
+    color: darkblue;
+}
+
+code{
+    color: darkred;
+}
+
+.green {
+    color: green;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 900;
+}
