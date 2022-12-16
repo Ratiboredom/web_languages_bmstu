@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 40px;
+        }
+
+        main {
+            margin-top: 15px;
+        }
+
+        footer {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .my-primary {
+            background-color: lightseagreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="avatar.jpeg" alt="avatar" width="150" height="150">
+            </div>
+            <div class="col-4">
+                <p>Любой текст</p>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-4">
+                <form action="POST">
+                    <table class="form-table table-primary">
+                        <tr>
+                            <th colspan="2">Регистрация</th>
+                        </tr>
+                
+                        <tr>
+                            <td>First name:</td>
+                            <td><input type="text" name="firstname" placeholder="John"></td>
+                        </tr>
+                        <tr>
+                            <td>Last name:</td>
+                            <td><input type="text" name="lastname" placeholder="Smith"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <input class="radio" type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label><br>
+                                <input class="radio" type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label><br>
+                                <input class="radio" type="radio" name="gender" id="other" value="other">
+                                <label for="other">Other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td><input type="text" name="username" placeholder="john123"></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="userpass" placeholder="Enter password"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="button-cell"><input type="submit" value="Submit" class="btn-primary" id="submit-btn"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-8">
+                <table class="timetable table-dark border-secondary">
+                    <tr>
+                        <th colspan="3">ПОНЕДЕЛЬНИК</th>
+                    <tr>
+                        <td><strong>Время</strong></td>
+                        <td><strong>ЧС</strong></td>
+                        <td><strong>ЗН</strong></td>
+                    </tr>
+                    <tr>
+                        <td>08:30 - 10:05</td>
+                        <td colspan="2">(сем) Правоведение 137л</td>
+            
+                    </tr>
+                    <tr>
+                        <td>10:15 - 11:50</td>
+                        <td colspan="2">(лек) Теория вероятностей и математическая статистика 218л Горяинов В.Б.</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 13:35</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>13:50 - 15:25</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>15:40 - 17:15</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>17:25 - 19:00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>19:10 - 20:45</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col">
+                <h2>Что такое HTML</h2>
+    <p><span class="bold">HTML</span> (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов для просмотра веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают с локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране монитора.</p>
+    <p>Элементы <span>HTML</span> являются строительными блоками HTML страниц. С помощью HTML разные конструкции, изображения и другие объекты такие как интеракивная веб-формы могут быть встроены в отображаемую страницу. HTML предоставляет средства для создания заголовков, абзацев, списков, ссылок, цитат и других элементов. <em>Элементы HTML выделяются <strong>тегами</strong>, записанными с использованием угловых скобок.</em> Такие теги, как <code>&lt;img&frasl;&gt;</code> и <code>&lt;input&frasl;&gt;</code>, напрямую вводят контент на страницу. Другие теги, такие как <code>&lt;p&gt;</code>, окружают и оформляют текст внутри себя и могут включать другие теги в качестве подэлементов.<span class="green"> Браузеры не отображают HTML-теги, но используют их для интерпретации содержимого страницы.</span></p>
+    <p>В HTML можно встроить программый код на языке программирования <span>JavaScript</span>, для управления поведением и содержанием веб-страниц. Также включение <span class="underlined blue">CSS</span> в HTML описывает <span class="underlined">внешний вид и макет страницы.</span></p>
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+</html>
