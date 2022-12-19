@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div class="container">
+        <div class="page-title-block"><h2>Page title</h2></div>
+        <div class="cards-block">
+            <div class="card">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <h4 class="card-title">Готовая карточка</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dignissimos at. Labore porro ipsum temporibus? Ipsam placeat ipsum incidunt sed!</p>
+                    <a href="#" class="btn btn-primary">Ссылка никуда</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <h4 class="card-title">Готовая карточка 2</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, corrupti. Veritatis recusandae esse cumque laboriosam modi possimus architecto, adipisci culpa.</p>
+                    <a href="#" class="btn btn-primary">Ссылка никуда</a>
+                </div>
+            </div>
+        </div>
+        <button class="btn-secondary" type="submit" onclick="showDom()">Показать DOM-элементы</button>
+        <h4 id="output-header">Результат обхода дерева элементов страницы:</h4>
+        <div id="dom-output-block"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
