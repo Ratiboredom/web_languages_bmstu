@@ -1,0 +1,44 @@
+html,
+body {
+    min-height: auto;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    max-width: 1280px;
+    justify-content: center;
+}
+
+.card {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#add-item-block {
+    width: 48%;
+    margin: 0 auto;
+}
+
+#add-item-block {
+    padding-bottom: 4px;
+}
+
+#add-item-block-header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(78, 23, 206);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    margin: auto;
+}
+
+.price:hover {
+    background-color: rgb(197, 197, 197);
+}
