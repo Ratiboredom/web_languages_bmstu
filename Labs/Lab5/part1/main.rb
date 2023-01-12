@@ -1,5 +1,6 @@
-def func(x)
-    Math.tan(x**3 + x**2 - x) - Math.sin((x**3 + (x**2 - x).abs).abs) + (x**3 + x**2 - x)**2
-end
+# frozen_string_literal: true
 
-puts func(1.57)
+def func(x)
+  polynome = x**3 + x**2 - x
+  Math.tan(polynome) - Math.sin(polynome.abs) + polynome**2
+end
